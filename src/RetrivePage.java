@@ -20,6 +20,7 @@ public class RetrivePage {
 		FileOutputStream out = new FileOutputStream(file); 
 		System.out.println("executing request" + httpget.getRequestLine());  
 		CloseableHttpResponse response = httpclient.execute(httpget);
+		
 		try {
 			// 获取响应实体    
             HttpEntity entity = response.getEntity();  
