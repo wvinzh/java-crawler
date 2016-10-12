@@ -8,7 +8,7 @@ public class Queue {
 		queue.addLast(t);
 	}
 	//出队列
-	public Object deQueue() {
+	public String deQueue() {
 		return queue.removeFirst();
 	}
 	//判断队列是否为空

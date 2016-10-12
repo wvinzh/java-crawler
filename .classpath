@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="D:/Z_Downloads/httpcomponents-client-4.5.2-bin/httpcomponents-client-4.5.2/lib/httpmime-4.5.2.jar"/>
 	<classpathentry kind="lib" path="D:/Z_Downloads/httpcomponents-client-4.5.2-bin/httpcomponents-client-4.5.2/lib/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Z_Downloads/httpcomponents-client-4.5.2-bin/httpcomponents-client-4.5.2/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Z_Downloads/jsoup-1.9.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

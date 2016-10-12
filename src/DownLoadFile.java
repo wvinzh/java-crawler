@@ -22,7 +22,7 @@ public class DownLoadFile {
 		//txt/html类型
 		if (contentType.indexOf("html") != -1) {
 			url = url.replaceAll("[\\?/:*|<>*\"]", "_");
-			return url;
+			return url+".txt";
 		}else {
 			return url.replaceAll("[\\?/:*|<>*\"]", "_")+"."+
 					contentType.substring(contentType.lastIndexOf("/")+1);
@@ -60,7 +60,7 @@ public class DownLoadFile {
             System.out.println("Response content length: " + entity.getContentLength());             
             // 打印响应内容    
             byte[] responseBody = EntityUtils.toByteArray(entity);
-            filepath = "F://"+getFilenNameByUrl(url, 
+            filepath = "F://pages/"+getFilenNameByUrl(url, 
             		response.getHeaders("Content-Type")[0].getValue());
             saveToLocal(responseBody, filepath);
         }  

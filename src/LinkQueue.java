@@ -19,7 +19,7 @@ public class LinkQueue {
 		visitedUrl.remove(url);
 	}
 	//未访问的url出队列
-	public static Object unVisitedUrlDeQueue() {
+	public static String unVisitedUrlDeQueue() {
 		return unVisitedUrl.deQueue();
 	}
 	//保证每个url只被访问一次
