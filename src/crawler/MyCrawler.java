@@ -1,5 +1,12 @@
+package crawler;
 import java.util.Set;
 
+/** 
+ * @ClassName: MyCrawler 
+ * @Description: 爬虫类
+ * @author: zengh
+ * @date: 2016年10月12日 下午7:12:19  
+ */
 public class MyCrawler {
 
 	//使用种子初始化url队列
@@ -44,7 +51,7 @@ public class MyCrawler {
 	}
 	public static void main(String[] args) {
 		MyCrawler crawler = new MyCrawler();
-		crawler.crawling(SeedsGenerator.getLinksFromFile("F://seeds.txt"));
+		crawler.crawling(SeedsInjector.getLinksFromFile("F://seeds.txt"));
 	}
 
 }

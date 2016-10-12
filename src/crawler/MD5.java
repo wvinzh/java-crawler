@@ -1,3 +1,4 @@
+package crawler;
 import java.security.MessageDigest;
 
 public class MD5 {

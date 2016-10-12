@@ -13,5 +13,12 @@
 	<classpathentry kind="lib" path="D:/Z_Downloads/httpcomponents-client-4.5.2-bin/httpcomponents-client-4.5.2/lib/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Z_Downloads/httpcomponents-client-4.5.2-bin/httpcomponents-client-4.5.2/lib/jna-platform-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Z_Downloads/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files (x86)/Oracle/Berkeley DB 12cR1 6.0.30/jar/db.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files (x86)/Oracle/Berkeley DB 12cR1 6.0.30/jar/jdbc.jar"/>
+	<classpathentry kind="lib" path="D:/Z_Downloads/je-7.0.6/je-7.0.6/lib/je-7.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Z_Downloads/je-7.0.6/je-7.0.6/lib/JEJConsole.jar"/>
+	<classpathentry kind="lib" path="D:/Z_Downloads/je-7.0.6/je-7.0.6/lib/RepJEJConsole.jar"/>
+	<classpathentry kind="lib" path="D:/Z_Downloads/junit-4.12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

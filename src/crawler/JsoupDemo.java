@@ -1,3 +1,4 @@
+package crawler;
 
 import org.jsoup.Jsoup;
 import org.jsoup.helper.Validate;
