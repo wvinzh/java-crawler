@@ -19,8 +19,7 @@ public class RetrivePage {
 		File file = new File("F://pages/"+filename+".txt");
 		FileOutputStream out = new FileOutputStream(file); 
 		System.out.println("executing request" + httpget.getRequestLine());  
-		CloseableHttpResponse response = httpclient.execute(httpget);
-		
+		CloseableHttpResponse response = httpclient.execute(httpget);		
 		try {
 			// 获取响应实体    
             HttpEntity entity = response.getEntity();  
