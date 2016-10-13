@@ -54,6 +54,8 @@ public class BerkeleyDBDemo {
 		//catalogDatabase = env.openDatabase(null, CLASS_CATALOG, dbConfig);
 		
 		database = env.openDatabase(null, dbName, dbConfig);
+		
+		System.out.println("database 创建成功===================="+env.toString()+"=="+database.toString());
 	}
 
 	/*
