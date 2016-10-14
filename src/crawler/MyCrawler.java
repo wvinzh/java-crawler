@@ -1,6 +1,9 @@
 package crawler;
 
+import java.util.Queue;
 import java.util.Set;
+
+import PersistentQueue.BdbPersistentQueue;
 
 /**
  * @ClassName: MyCrawler
@@ -11,9 +14,12 @@ import java.util.Set;
 public class MyCrawler {
 
 	BDBFrontier bdbFrontier;//
+	String dbDir="F://BDB/tmp";
+	Queue<String> persistentQueue;
 
 	public MyCrawler() {
 		bdbFrontier = new BDBFrontier("F://BDB/tmp");
+		 persistentQueue=new BdbPersistentQueue(dbDir,"pq",String.class);
 	}
 
 	// 使用种子初始化url队列
@@ -55,7 +61,8 @@ public class MyCrawler {
 				LinkQueue.addUnvisitedUrl(link);
 				CrawUrl crawUrl = new CrawUrl();
 				crawUrl.setUrl(link);
-				bdbFrontier.putUrl(crawUrl);
+//				bdbFrontier.putUrl(crawUrl);
+				persistentQueue.add(link);
 			}
 		}
 	}

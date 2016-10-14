@@ -27,7 +27,7 @@ import com.sleepycat.je.DatabaseException;
  */
 public class BDBFrontier extends AbstractFrontier implements Frontier {
 
-	private StoredMap<Object, Object> pendingUrisDB = null;
+	private StoredMap<String,CrawUrl> pendingUrisDB = null;
 
 	public BDBFrontier(String homeDirectory) throws DatabaseException {
 		super(homeDirectory);
@@ -35,11 +35,11 @@ public class BDBFrontier extends AbstractFrontier implements Frontier {
 		EntryBinding keyBinding = new SerialBinding<>(javaCatalog, String.class);
 		EntryBinding valueBinding = new SerialBinding<>(javaCatalog, CrawUrl.class);
 
-		pendingUrisDB = new StoredMap<>(database, keyBinding, valueBinding, true);
+		pendingUrisDB = new StoredMap<String,CrawUrl>(database, keyBinding, valueBinding, true);
 	}
 
 	@Override
-	protected void put(Object key, Object value) {
+	protected void put(String key, CrawUrl value) {
 		pendingUrisDB.put(key, value);
 	}
 

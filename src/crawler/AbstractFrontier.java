@@ -52,7 +52,7 @@ public abstract class AbstractFrontier {
 		env.close();
 	}
 
-	protected abstract void put(Object key, Object value);
+	protected abstract void put(String key, CrawUrl value);
 
 	protected abstract Object get(Object key);
 
